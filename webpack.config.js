@@ -5,11 +5,11 @@ const BundleAnalyzerPlugin =
   require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
 
 module.exports = {
-  mode: "development",
+  mode: "production",
   entry: "/src/index.js",
   output: {
     filename: "js/bundle.js",
-    path: path.resolve(__dirname, "./dist"),
+    path: path.resolve(__dirname, "./docs"),
   },
   module: {
     rules: [
