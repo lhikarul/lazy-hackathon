@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const webpack = require("webpack");
 const BundleAnalyzerPlugin =
   require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   mode: "production",
@@ -15,7 +16,8 @@ module.exports = {
     rules: [
       {
         test: /\.css$/,
-        use: ["style-loader", "css-loader"],
+        // use: ["style-loader", "css-loader"],
+        use: [MiniCssExtractPlugin.loader, "css-loader"],
       },
       {
         test: /.(png|svg|jpg|jpeg|gif|webp)$/i,
@@ -41,5 +43,9 @@ module.exports = {
       jQuery: "jquery",
     }),
     new BundleAnalyzerPlugin(),
+    new MiniCssExtractPlugin({
+      filename: "css/[name].css",
+      chunkFilename: "css/[name].chunk.css",
+    }),
   ],
 };
