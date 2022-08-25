@@ -24,6 +24,7 @@
   },
   "dependencies": {
     "css-loader": "^6.7.1",
+    "jquery": "3.4.1",
     "style-loader": "^3.3.1"
   }
 }
