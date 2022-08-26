@@ -6,12 +6,21 @@ const BundleAnalyzerPlugin =
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
+const PurgecssPlugin = require("purgecss-webpack-plugin");
+
+const glob = require("glob");
+
+const PATHS = {
+  src: path.join(__dirname, "src"),
+};
 
 module.exports = {
   mode: "production",
-  entry: "/src/index.js",
+  entry: {
+    index: path.resolve(__dirname, "./src/index.js"),
+  },
   output: {
-    filename: "js/bundle.js",
+    filename: "js/[name].js",
     path: path.resolve(__dirname, "./docs"),
   },
   module: {
@@ -37,10 +46,16 @@ module.exports = {
   },
   optimization: {
     minimize: true,
-    minimizer: [
-      new UglifyJsPlugin({ sourceMap: true }),
-      new CssMinimizerPlugin(),
-    ],
+    minimizer: [new UglifyJsPlugin(), new CssMinimizerPlugin()],
+    splitChunks: {
+      chunks: "all",
+      cacheGroups: {
+        jquery: {
+          name: "jquery",
+          test: /jquery\.js/,
+        },
+      },
+    },
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -51,10 +66,13 @@ module.exports = {
       $: "jquery",
       jQuery: "jquery",
     }),
-    // new BundleAnalyzerPlugin(),
+    new BundleAnalyzerPlugin(),
     new MiniCssExtractPlugin({
       filename: "css/[name].css",
       chunkFilename: "css/[name].chunk.css",
+    }),
+    new PurgecssPlugin({
+      paths: glob.sync(`${PATHS.src}/**/*`, { nodir: true }),
     }),
   ],
 };
