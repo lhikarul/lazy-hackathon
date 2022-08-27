@@ -8,7 +8,7 @@ const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const PurgecssPlugin = require("purgecss-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
-const CopyWebpackPlugin = require("copy-webpack-plugin");
+// const CopyWebpackPlugin = require("copy-webpack-plugin");
 const glob = require("glob");
 
 const PATHS = {
@@ -68,7 +68,7 @@ module.exports = {
           },
         },
         generator: {
-          filename: "images/[name].[hash:6][ext]",
+          filename: "image/[name].[hash:6][ext]",
         },
       },
     ],
@@ -95,14 +95,14 @@ module.exports = {
       $: "jquery",
       jQuery: "jquery",
     }),
-    new CopyWebpackPlugin({
-      patterns: [
-        {
-          from: path.resolve(__dirname, "./src/image"),
-          to: path.resolve(__dirname, "./docs/image"),
-        },
-      ],
-    }),
+    // new CopyWebpackPlugin({
+    //   patterns: [
+    //     {
+    //       from: path.resolve(__dirname, "./src/image"),
+    //       to: path.resolve(__dirname, "./docs/image"),
+    //     },
+    //   ],
+    // }),
     new BundleAnalyzerPlugin(),
     new MiniCssExtractPlugin({
       filename: "css/[name].css",
