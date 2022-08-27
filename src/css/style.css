@@ -94,41 +94,41 @@ ul {
 
 /* title - 各區塊標題 */
 .description .section__title span::before {
-  -webkit-mask-image: url("./../image/title_description.png");
-  mask-image: url("./../image/title_description.png");
+  -webkit-mask-image: url("./../image/title_description.webp");
+  mask-image: url("./../image/title_description.webp");
 }
 
 .team .section__title span::before {
   width: 22px;
   height: 22px;
-  -webkit-mask-image: url("./../image/title_team.png");
-  mask-image: url("./../image/title_team.png");
+  -webkit-mask-image: url("./../image/title_team.webp");
+  mask-image: url("./../image/title_team.webp");
 }
 
 .schedule .section__title span::before {
-  -webkit-mask-image: url("./../image/title_schedule.png");
-  mask-image: url("./../image/title_schedule.png");
+  -webkit-mask-image: url("./../image/title_schedule.webp");
+  mask-image: url("./../image/title_schedule.webp");
 }
 
 .history .section__title span::before {
   width: 25px;
   height: 25px;
   top: 5px;
-  -webkit-mask-image: url("./../image/title_history.png");
-  mask-image: url("./../image/title_history.png");
+  -webkit-mask-image: url("./../image/title_history.webp");
+  mask-image: url("./../image/title_history.webp");
   background-color: #fad312;
 }
 
 .judge .section__title span::before {
   color: #fff;
-  -webkit-mask-image: url("./../image/title_judge.png");
-  mask-image: url("./../image/title_judge.png");
+  -webkit-mask-image: url("./../image/title_judge.webp");
+  mask-image: url("./../image/title_judge.webp");
   background-color: #fad312;
 }
 
 .subscribe .section__title span::before {
-  -webkit-mask-image: url("./../image/title_subscribe.png");
-  mask-image: url("./../image/title_subscribe.png");
+  -webkit-mask-image: url("./../image/title_subscribe.webp");
+  mask-image: url("./../image/title_subscribe.webp");
 }
 
 /* ------- layout ------- */
@@ -205,7 +205,7 @@ ul {
 .nav .nav__logo {
   width: 160px;
   height: 45px;
-  background: url("./../image/logo_nav.png") no-repeat center center;
+  background: url("./../image/logo_nav.webp") no-repeat center center;
   background-size: 100% auto;
 }
 
@@ -301,7 +301,7 @@ ul {
   width: 80%;
   height: 70vh;
   margin: 0 auto;
-  background: url("./../image/bg_header.png") no-repeat center center;
+  background: url("./../image/bg_header.webp") no-repeat center center;
   background-size: 80% auto;
 }
 
@@ -332,7 +332,7 @@ ul {
 }
 
 .description .description__bg {
-  background: #fff url("./../image/bg_description.jpg") no-repeat center center;
+  background: #fff url("./../image/bg_description.webp") no-repeat center center;
   background-size: 100% auto;
   background-attachment: fixed;
 }
@@ -398,7 +398,7 @@ ul {
 @media screen and (max-width: 640px) {
   .description .description__bg {
     background-color: #000;
-    background-image: url("./../image/bg_description-mobile.jpg");
+    background-image: url("./../image/bg_description-mobile.webp");
     background-size: 100% auto;
     background-attachment: initial;
   }
@@ -467,8 +467,8 @@ ul {
   background-color: #000;
   -webkit-mask-size: cover;
   mask-size: cover;
-  -webkit-mask-image: url("./../image/add-circular-outlined-button.png");
-  mask-image: url("./../image/add-circular-outlined-button.png");
+  -webkit-mask-image: url("./../image/add-circular-outlined-button.webp");
+  mask-image: url("./../image/add-circular-outlined-button.webp");
   position: absolute;
   right: 10px;
 }
@@ -612,7 +612,7 @@ ul {
 /* ------- 歷屆成績 ------- */
 .history {
   text-align: center;
-  background: #000 url("./../image/bg_history.png") repeat-y center center;
+  background: #000 url("./../image/bg_history.webp") repeat-y center center;
   background-attachment: fixed;
   background-size: 960px auto;
 }
@@ -634,7 +634,7 @@ ul {
 /* 歷屆成績 - RWD */
 @media screen and (max-width: 640px) {
   .history {
-    background-image: url("./../image/bg_history-mobile.png");
+    background-image: url("./../image/bg_history-mobile.webp");
     background-size: cover;
     background-attachment: initial;
   }
@@ -727,25 +727,25 @@ ul {
 }
 
 .comments__icon.icon-strength {
-  -webkit-mask-image: url("./../image/icon-strength.png");
-  mask-image: url("./../image/icon-strength.png");
+  -webkit-mask-image: url("./../image/icon-strength.webp");
+  mask-image: url("./../image/icon-strength.webp");
 }
 
 .comments__icon.icon-buddha {
   width: 80px;
   height: 80px;
-  -webkit-mask-image: url("./../image/icon-buddha.png");
-  mask-image: url("./../image/icon-buddha.png");
+  -webkit-mask-image: url("./../image/icon-buddha.webp");
+  mask-image: url("./../image/icon-buddha.webp");
 }
 
 .comments__icon.icon-sleep {
-  -webkit-mask-image: url("./../image/icon-sleep.png");
-  mask-image: url("./../image/icon-sleep.png");
+  -webkit-mask-image: url("./../image/icon-sleep.webp");
+  mask-image: url("./../image/icon-sleep.webp");
 }
 
 .comments__icon.icon-bao {
-  -webkit-mask-image: url("./../image/icon-bao.png");
-  mask-image: url("./../image/icon-bao.png");
+  -webkit-mask-image: url("./../image/icon-bao.webp");
+  mask-image: url("./../image/icon-bao.webp");
 }
 
 /* 使用者見證 - RWD */
@@ -818,8 +818,8 @@ ul {
   background-color: #fff;
   -webkit-mask-size: cover;
   mask-size: cover;
-  -webkit-mask-image: url("./../image/add-circular-outlined-button.png");
-  mask-image: url("./../image/add-circular-outlined-button.png");
+  -webkit-mask-image: url("./../image/add-circular-outlined-button.webp");
+  mask-image: url("./../image/add-circular-outlined-button.webp");
   position: absolute;
   bottom: calc(50% - 10px);
   left: calc(50% - 10px);
@@ -1007,7 +1007,7 @@ ul {
 /* ------- footer ------- */
 /* 報名資訊 ------- */
 .subscribe {
-  background: #fff url("./../image/bg_footer.png") no-repeat center center;
+  background: #fff url("./../image/bg_footer.webp") no-repeat center center;
   background-size: auto 380px;
   border-bottom: 3px solid #fad312;
 }
@@ -1118,22 +1118,22 @@ ul {
 }
 
 .footer__social-media .footer__social-icon.icon-fb {
-  -webkit-mask-image: url("./../image/icon-fb.png");
-  mask-image: url("./../image/icon-fb.png");
+  -webkit-mask-image: url("./../image/icon-fb.webp");
+  mask-image: url("./../image/icon-fb.webp");
 }
 
 .footer__social-media .footer__social-icon.icon-twitter {
-  -webkit-mask-image: url("./../image/icon-twitter.png");
-  mask-image: url("./../image/icon-twitter.png");
+  -webkit-mask-image: url("./../image/icon-twitter.webp");
+  mask-image: url("./../image/icon-twitter.webp");
 }
 
 .footer__social-media .footer__social-icon.icon-ig {
-  -webkit-mask-image: url("./../image/icon-ig.png");
-  mask-image: url("./../image/icon-ig.png");
+  -webkit-mask-image: url("./../image/icon-ig.webp");
+  mask-image: url("./../image/icon-ig.webp");
 }
 
 .footer__social-media .footer__social-icon.icon-g-plus {
-  -webkit-mask-image: url("./../image/icon-g-plus.png");
-  mask-image: url("./../image/icon-g-plus.png");
+  -webkit-mask-image: url("./../image/icon-g-plus.webp");
+  mask-image: url("./../image/icon-g-plus.webp");
 }
 /*# sourceMappingURL=style.css.map */
