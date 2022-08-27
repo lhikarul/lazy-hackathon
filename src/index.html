@@ -9,7 +9,14 @@
       href="https://fonts.googleapis.com/css?family=Arvo|Noto+Sans+TC&display=swap"
       rel="stylesheet"
     />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.0.0/dist/lazyload.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"
+    ></script>
   </head>
   <body>
     <!-- wrapper -->
@@ -117,7 +124,10 @@
                 交給同組的各位囉！
               </p>
               <div class="team__pic">
-                <img src="<%= require('./image/team_a.webp') %>" />
+                <img
+                  class="lazy"
+                  data-src="<%= require('./image/team_a.webp') %>"
+                />
               </div>
               <a class="team__btn" href="">隊伍介紹</a>
             </li>
@@ -135,7 +145,10 @@
                 躺著真的很快樂
               </p>
               <div class="team__pic">
-                <img src="<%= require('./image/team_b.webp') %>" />
+                <img
+                  class="lazy"
+                  data-src="<%= require('./image/team_b.webp') %>"
+                />
               </div>
               <a class="team__btn" href="">隊伍介紹</a>
             </li>
@@ -153,7 +166,10 @@
                 來人啊！快救我
               </p>
               <div class="team__pic">
-                <img src="<%= require('./image/team_c.webp') %>" />
+                <img
+                  class="lazy"
+                  data-src="<%= require('./image/team_c.webp') %>"
+                />
               </div>
               <a class="team__btn" href="">隊伍介紹</a>
             </li>
@@ -171,7 +187,10 @@
                 可以回家了嗎？
               </p>
               <div class="team__pic">
-                <img src="<%= require('./image/team_d.webp') %>" />
+                <img
+                  class="lazy"
+                  data-src="<%= require('./image/team_d.webp') %>"
+                />
               </div>
               <a class="team__btn" href="">隊伍介紹</a>
             </li>
@@ -189,7 +208,10 @@
                 我媽逼我來的
               </p>
               <div class="team__pic">
-                <img src="<%= require('./image/team_e.webp') %>" />
+                <img
+                  class="lazy"
+                  data-src="<%= require('./image/team_e.webp') %>"
+                />
               </div>
               <a class="team__btn" href="">隊伍介紹</a>
             </li>
@@ -207,7 +229,10 @@
                 呵呵呵
               </p>
               <div class="team__pic">
-                <img src="<%= require('./image/team_f.webp') %>" />
+                <img
+                  class="lazy"
+                  data-src="<%= require('./image/team_f.webp') %>"
+                />
               </div>
               <a class="team__btn" href="">隊伍介紹</a>
             </li>
@@ -355,42 +380,73 @@
           <ul class="judge__nav">
             <li class="judge__item judge__item--test judge__item--show">
               <div class="pic this_is_an_image image123321 image456789">
-                <img src="<%= require('./image/judge_a.webp') %>" />
+                <img
+                  class="lazy"
+                  data-src="<%= require('./image/judge_a.webp') %>"
+                />
               </div>
             </li>
             <li class="judge__item judge__item--test judge__item--show">
               <div class="pic this_is_an_image image123321 image456789">
-                <img src="<%= require('./image/judge_b.webp') %>" alt="" />
+                <img
+                  class="lazy"
+                  data-src="<%= require('./image/judge_b.webp') %>"
+                  alt=""
+                />
               </div>
             </li>
             <li class="judge__item judge__item--test judge__item--show">
               <div class="pic this_is_an_image image123321 image456789">
-                <img src="<%= require('./image/judge_c.webp') %>" alt="" />
+                <img
+                  class="lazy"
+                  data-src="<%= require('./image/judge_c.webp') %>"
+                  alt=""
+                />
               </div>
             </li>
             <li class="judge__item judge__item--test judge__item--show">
               <div class="pic this_is_an_image image123321 image456789">
-                <img src="<%= require('./image/judge_d.webp') %>" alt="" />
+                <img
+                  class="lazy"
+                  data-src="<%= require('./image/judge_d.webp') %>"
+                  alt=""
+                />
               </div>
             </li>
             <li class="judge__item judge__item--test judge__item--show">
               <div class="pic this_is_an_image image123321 image456789">
-                <img src="<%= require('./image/judge_e.webp') %>" alt="" />
+                <img
+                  class="lazy"
+                  data-src="<%= require('./image/judge_e.webp') %>"
+                  alt=""
+                />
               </div>
             </li>
             <li class="judge__item judge__item--test judge__item--show">
               <div class="pic this_is_an_image image123321 image456789">
-                <img src="<%= require('./image/judge_f.webp') %>" alt="" />
+                <img
+                  class="lazy"
+                  data-src="<%= require('./image/judge_f.webp') %>"
+                  alt=""
+                />
               </div>
             </li>
             <li class="judge__item judge__item--test judge__item--show">
               <div class="pic this_is_an_image image123321 image456789">
-                <img src="<%= require('./image/judge_g.webp') %>" alt="" />
+                <img
+                  class="lazy"
+                  data-src="<%= require('./image/judge_g.webp') %>"
+                  alt=""
+                />
               </div>
             </li>
             <li class="judge__item judge__item--test judge__item--show">
               <div class="pic this_is_an_image image123321 image456789">
-                <img src="<%= require('./image/judge_h.webp') %>" alt="" />
+                <img
+                  class="lazy"
+                  data-src="<%= require('./image/judge_h.webp') %>"
+                  alt=""
+                />
               </div>
             </li>
           </ul>
@@ -399,7 +455,11 @@
           <ul class="judge__gallery">
             <li>
               <div class="pic this_is_an_image image123321 image456789">
-                <img src="<%= require('./image/judge_a_l.webp') %>" alt="" />
+                <img
+                  class="lazy"
+                  data-src="<%= require('./image/judge_a_l.webp') %>"
+                  alt=""
+                />
               </div>
               <div class="judge__card">
                 <h4 class="judge__card-title">我是不明生物</h4>
@@ -413,7 +473,11 @@
             <!-- item -->
             <li>
               <div class="pic this_is_an_image image123321 image456789">
-                <img src="<%= require('./image/judge_b_l.webp') %>" alt="" />
+                <img
+                  class="lazy"
+                  data-src="<%= require('./image/judge_b_l.webp') %>"
+                  alt=""
+                />
               </div>
               <div class="judge__card">
                 <h4 class="judge__card-title">巴哥巴哥 pug pug</h4>
@@ -427,7 +491,11 @@
             <!-- item -->
             <li>
               <div class="pic this_is_an_image image123321 image456789">
-                <img src="<%= require('./image/judge_c_l.webp') %>" alt="" />
+                <img
+                  class="lazy"
+                  data-src="<%= require('./image/judge_c_l.webp') %>"
+                  alt=""
+                />
               </div>
               <div class="judge__card">
                 <h4 class="judge__card-title">本人小萌貓啦</h4>
@@ -441,7 +509,11 @@
             <!-- item -->
             <li>
               <div class="pic this_is_an_image image123321 image456789">
-                <img src="<%= require('./image/judge_d_l.webp') %>" alt="" />
+                <img
+                  class="lazy"
+                  data-src="<%= require('./image/judge_d_l.webp') %>"
+                  alt=""
+                />
               </div>
               <div class="judge__card">
                 <h4 class="judge__card-title">無尾熊走路超慢你知道嗎</h4>
@@ -455,7 +527,11 @@
             <!-- item -->
             <li>
               <div class="pic this_is_an_image image123321 image456789">
-                <img src="<%= require('./image/judge_e_l.webp') %>" alt="" />
+                <img
+                  class="lazy"
+                  data-src="<%= require('./image/judge_e_l.webp') %>"
+                  alt=""
+                />
               </div>
               <div class="judge__card">
                 <h4 class="judge__card-title">木柵耍萌扛壩子</h4>
@@ -469,7 +545,11 @@
             <!-- item -->
             <li>
               <div class="pic this_is_an_image image123321 image456789">
-                <img src="<%= require('./image/judge_f_l.webp') %>" alt="" />
+                <img
+                  class="lazy"
+                  data-src="<%= require('./image/judge_f_l.webp') %>"
+                  alt=""
+                />
               </div>
               <div class="judge__card">
                 <h4 class="judge__card-title">馬馬很危險喔</h4>
@@ -483,7 +563,11 @@
             <!-- item -->
             <li>
               <div class="pic this_is_an_image image123321 image456789">
-                <img src="<%= require('./image/judge_g_l.webp') %>" alt="" />
+                <img
+                  class="lazy"
+                  data-src="<%= require('./image/judge_g_l.webp') %>"
+                  alt=""
+                />
               </div>
               <div class="judge__card">
                 <h4 class="judge__card-title">熊熊沒事做</h4>
@@ -497,7 +581,11 @@
             <!-- item -->
             <li>
               <div class="pic this_is_an_image image123321 image456789">
-                <img src="<%= require('./image/judge_h_l.webp') %>" alt="" />
+                <img
+                  class="lazy"
+                  data-src="<%= require('./image/judge_h_l.webp') %>"
+                  alt=""
+                />
               </div>
               <div class="judge__card">
                 <h4 class="judge__card-title">你～說～什～毛～</h4>

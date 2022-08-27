@@ -8,3 +8,5 @@ import "popper.js";
 import "./js/bootstrap.js";
 import "slick-carousel";
 import "./js/index.js";
+
+new LazyLoad();
