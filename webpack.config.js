@@ -7,7 +7,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const PurgecssPlugin = require("purgecss-webpack-plugin");
-
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const glob = require("glob");
 
 const PATHS = {
@@ -74,5 +74,6 @@ module.exports = {
     new PurgecssPlugin({
       paths: glob.sync(`${PATHS.src}/**/*`, { nodir: true }),
     }),
+    new CleanWebpackPlugin(),
   ],
 };
