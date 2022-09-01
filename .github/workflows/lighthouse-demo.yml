@@ -20,3 +20,4 @@ jobs:
           lhci autorun --upload.target=temporary-public-storage || echo "LHCI failed!"
         env:
           LHCI_GITHUB_APP_TOKEN: ${{secrets.LHCI_GITHUB_APP_TOKEN}}
+          ARGS: "-av"
