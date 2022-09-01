@@ -103,7 +103,7 @@ module.exports = {
     //     },
     //   ],
     // }),
-    new BundleAnalyzerPlugin(),
+    // new BundleAnalyzerPlugin(),
     new MiniCssExtractPlugin({
       filename: "css/[name].css",
       chunkFilename: "css/[name].chunk.css",
