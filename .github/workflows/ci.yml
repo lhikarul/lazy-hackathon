@@ -1,8 +1,7 @@
 name: CI
 on: [push]
 jobs:
-  lhci:
-    name: Lighthouse CI
+  lighthouseci:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -20,4 +19,3 @@ jobs:
           lhci autorun --upload.target=temporary-public-storage || echo "LHCI failed!"
         env:
           LHCI_GITHUB_APP_TOKEN: ${{secrets.LHCI_GITHUB_APP_TOKEN}}
-          ARGS: "-av"
