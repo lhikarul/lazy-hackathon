@@ -119,6 +119,8 @@ module.exports = {
     }),
     new AddAssetHtmlWebpackPlugin({
       filepath: path.resolve(__dirname, "./dll/jquery.dll.js"),
+      outputPath: "./auto",
+      // outputPath: path.resolve(__dirname, "./docs/auto"),
     }),
     new CleanWebpackPlugin(),
   ],
