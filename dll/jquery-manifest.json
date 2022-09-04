@@ -1,0 +1,15 @@
+{
+  "name": "jquery_a16772f0115e2f288ecb",
+  "content": {
+    "./node_modules/slick-carousel/slick/slick.js": {
+      "id": 154,
+      "buildMeta": {}
+    },
+    "./node_modules/jquery/dist/jquery.js": { "id": 755, "buildMeta": {} },
+    "./node_modules/popper.js/dist/esm/popper.js": {
+      "id": 981,
+      "buildMeta": { "exportsType": "namespace" },
+      "exports": ["default"]
+    }
+  }
+}
