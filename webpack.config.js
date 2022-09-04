@@ -10,6 +10,7 @@ const PurgecssPlugin = require("purgecss-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 // const CopyWebpackPlugin = require("copy-webpack-plugin");
 const glob = require("glob");
+const AddAssetHtmlWebpackPlugin = require("add-asset-html-webpack-plugin");
 
 const PATHS = {
   src: path.join(__dirname, "src"),
@@ -23,6 +24,7 @@ module.exports = {
   output: {
     filename: "js/[name].js",
     path: path.resolve(__dirname, "./docs"),
+    // publicPath: "./",
   },
   module: {
     rules: [
@@ -103,13 +105,20 @@ module.exports = {
     //     },
     //   ],
     // }),
-    // new BundleAnalyzerPlugin(),
+    new BundleAnalyzerPlugin(),
     new MiniCssExtractPlugin({
       filename: "css/[name].css",
       chunkFilename: "css/[name].chunk.css",
     }),
     new PurgecssPlugin({
       paths: glob.sync(`${PATHS.src}/**/*`, { nodir: true }),
+    }),
+    new webpack.DllReferencePlugin({
+      context: __dirname,
+      manifest: path.resolve(__dirname, "./dll/jquery-manifest.json"),
+    }),
+    new AddAssetHtmlWebpackPlugin({
+      filepath: path.resolve(__dirname, "./dll/jquery.dll.js"),
     }),
     new CleanWebpackPlugin(),
   ],
